@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Transaction from './Transaction';
-import { Spinner, BaseButton } from './styledComponents';
+import { Spinner, BaseButton } from '../shared/styledComponents';
 import { toId } from './utils/general';
-import breakpoints from '../../shared/breakpoints';
+import breakpoints from '../shared/breakpoints';
 
 /* Styled Components */
 

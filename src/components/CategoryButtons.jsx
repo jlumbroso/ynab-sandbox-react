@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { OptionButton, SelectedOptionButton } from './styledComponents';
+import { OptionButton, SelectedOptionButton } from '../shared/styledComponents';
 
 /* Styled Components */
 

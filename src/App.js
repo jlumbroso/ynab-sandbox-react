@@ -1,16 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
-
-/** FIXME: import the following and include them!
-
-import LandingPage from "./components/LandingPage";
-import CostSharingForYnab from "./components/CostSharingForYnab";
-
- */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
 import CostSharingForYnab from "./components/CostSharingForYnab";
+
+//import logo from "./logo.svg";
+//import "./App.css";
 
 function App() {
   return (

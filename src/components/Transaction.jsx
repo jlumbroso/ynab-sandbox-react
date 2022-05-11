@@ -5,7 +5,7 @@ import formatCurrency from 'format-currency';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ElevatedTooltip from './ElevatedTooltip';
-import { WarningIcon } from './styledComponents';
+import { WarningIcon } from '../shared/styledComponents';
 
 /* Styled Components */
 

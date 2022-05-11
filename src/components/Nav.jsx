@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import breakpoints from '../../shared/breakpoints';
+import breakpoints from '../shared/breakpoints';
 import modalNames from './modalNames';
-import { LinkishButton, Hyperlink } from './styledComponents';
+import { LinkishButton, Hyperlink } from '../shared/styledComponents';
 
 const Container = styled.div`
   margin-bottom: 15px;

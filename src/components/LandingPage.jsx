@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PrivacyPolicy from '../shared/PrivacyPolicy';
 import Header from '../shared/Header';
 import Instructions from '../shared/Instructions';
-import { Hyperlink } from '../appSrc/components/styledComponents'; // FIXME: move to shared directory
+import { Hyperlink } from '../shared/styledComponents'; // FIXME: move to shared directory
 import './landing-page.css';
 
 /* Styled Components */
