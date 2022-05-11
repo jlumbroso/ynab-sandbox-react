@@ -7,7 +7,28 @@ import LandingPage from "./components/LandingPage";
 import CostSharingForYnab from "./components/CostSharingForYnab";
 
  */
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import LandingPage from "./components/LandingPage";
+import CostSharingForYnab from "./components/CostSharingForYnab";
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/cost-sharer" element={<CostSharingForYnab />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </header>
+    </div>
+  );
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -28,5 +49,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
