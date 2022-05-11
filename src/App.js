@@ -1,8 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import LandingPage from "./LandingPage";
+/** FIXME: import the following and include them!
+
+import LandingPage from "./components/LandingPage";
 import CostSharingForYnab from "./components/CostSharingForYnab";
+
+ */
 
 function App() {
   return (
