@@ -181,7 +181,7 @@ const Footer = styled.footer`
 const LandingPage = () => {
   const currentUrl = window.location.href;
   const appEndpoint = 'cost-sharer';
-  const ynabAuthScreenLink = `https://app.youneedabudget.com/oauth/authorize?client_id=4ac8ca3c431ac99075e603496136606d7da8102f6178ce2796566b30c4659988&redirect_uri=${currentUrl}${appEndpoint}&response_type=token`;
+  const ynabAuthScreenLink = `https://app.youneedabudget.com/oauth/authorize?client_id=saRZeS5qqGt2FnQLVfKRQdCP2a2ZiqonCThwR0IfYrM&redirect_uri=${currentUrl}${appEndpoint}&response_type=token`;
   const navMenuItems = [
     {
       text: 'Start',

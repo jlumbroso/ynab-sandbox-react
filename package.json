@@ -1,7 +1,8 @@
 {
   "name": "cost-sharing-for-ynab",
   "version": "1.0.0",
-  "description": "",
+  "description": "App interfacing with the YNAB (You Need a Budget) API allowing a user to conveniently manage a shared credit card in their budget",
+  "homepage": "https://cost-sharing-for-ynab.ottom.app/",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
