@@ -2,16 +2,14 @@
   "name": "cost-sharing-for-ynab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server",
-    "start-http": "node server",
-    "start-https": "IS_HTTPS=true node server",
-    "build-prod": "webpack --config webpack.prod.js",
-    "build-landing-page-prod": "webpack --config landingPageWebpack.prod.js",
-    "watch-dev": "webpack -w --config webpack.dev.js",
-    "watch-landing-page-dev": "webpack --config landingPageWebpack.dev.js -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "linter": "npx eslint ./ --ext .js,.jsx"
   },
   "repository": {
@@ -24,42 +22,74 @@
   "bugs": {
     "url": "https://github.com/chelseaSchmidt/cost-sharing-for-ynab/issues"
   },
-  "homepage": "https://github.com/chelseaSchmidt/cost-sharing-for-ynab#readme",
   "dependencies": {
-    "@babel/runtime": "^7.15.4",
-    "axios": "^0.20.0",
-    "body-parser": "^1.19.0",
-    "css-loader": "^4.3.0",
-    "express": "^4.17.1",
-    "format-currency": "^1.0.0",
-    "lodash": "^4.17.20",
-    "moment": "^2.29.0",
-    "mongoose": "^5.10.6",
-    "morgan": "^1.10.0",
-    "path": "^0.12.7",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^5.2.0",
-    "style-loader": "^1.2.1",
-    "styled-components": "^5.3.3",
-    "terser-webpack-plugin": "^5.0.1"
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.5",
-    "@babel/plugin-transform-runtime": "^7.15.8",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
-    "nodemon": "^2.0.15",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.2.0"
+    "gh-pages": "^3.2.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "arrow-parens": "off",
+      "comma-dangle": "off",
+      "no-console": "off",
+      "react/forbid-prop-types": "off",
+      "arrow-body-style": "off",
+      "react/require-default-props": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "object-curly-newline": "off"
+    },
+    "ignorePatterns": [
+      "bundle.js",
+      ".bundle.js",
+      "landingPageBundle.js"
+    ]
   }
 }
