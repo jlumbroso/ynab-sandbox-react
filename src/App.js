@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import LandingPage from "./LandingPage";
+import CostSharingForYnab from "./components/CostSharingForYnab";
 
 function App() {
   return (
