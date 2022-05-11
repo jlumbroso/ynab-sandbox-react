@@ -5,7 +5,7 @@ import PrivacyPolicy from '../shared/PrivacyPolicy';
 import Header from '../shared/Header';
 import Instructions from '../shared/Instructions';
 import { Hyperlink } from '../appSrc/components/styledComponents'; // FIXME: move to shared directory
-import './global.css';
+import './landing-page.css';
 
 /* Styled Components */
 
