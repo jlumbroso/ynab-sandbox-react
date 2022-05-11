@@ -47,3 +47,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           publish_dir: ./build
+          cname: cost-sharing-for-ynab.ottom.app
